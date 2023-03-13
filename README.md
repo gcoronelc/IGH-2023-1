@@ -16,10 +16,3 @@ En este taller el participante aprenderá a programar servicios REST con Spring 
 - Correo: gcoronelc@gmail.com 
 
 
-## Módulos
-
-- Fundamentos de programación
-- Java orientado a objetos
-- Base de datos Oracle
-- Apliaciones de escritorio
-- Aplicaciones Web
