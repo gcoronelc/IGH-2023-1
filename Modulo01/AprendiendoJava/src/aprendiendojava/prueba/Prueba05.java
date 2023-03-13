@@ -1,5 +1,6 @@
 package aprendiendojava.prueba;
 
+import aprendiendojava.service.Clase1;
 import aprendiendojava.service.Clase2;
 
 /**
@@ -13,7 +14,7 @@ import aprendiendojava.service.Clase2;
 public class Prueba05 {
 	
 	public static void main(String[] args) {
-		Clase2 obj = new Clase2();
+		Clase1 obj = new Clase2();
 		System.out.println("Suma: " + obj.suma(6, 4));
 	}
 
