@@ -9,7 +9,7 @@ En este taller el participante aprenderá a programar servicios REST con Spring 
 
 ## Docente
 
-- Docente: Coronel Castillo, Eric Gustavo
+- Docente: Eric Gustavo Coronel Castillo
 - Blog: http://www.desarrollasoftware.com/
 - Canal Youtube: https://www.youtube.com/DesarrollaSoftware
 - Cursos virtuales: https://gcoronelc.github.io/
