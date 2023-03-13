@@ -15,7 +15,9 @@ public class Prueba01 {
         PedidoService pedidoService;
         pedidoService = new PedidoService();
         double impuesto = pedidoService.calcularImpuesto(2560.0);
+        double total = pedidoService.calcularTotal(2560.0);
         System.out.println("Impuesto: " + impuesto);
+        System.out.println("Total: " + total);
     }
 
 }
