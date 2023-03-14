@@ -10,9 +10,6 @@ Email          :  gcoronelc@gmail.com
 Blog           :  http://gcoronelc.blogspot.com
 */
 
--- Valido pa partir de la version 12
-
-ALTER SESSION SET "_ORACLE_SCRIPT"=TRUE;
 
 -- =============================================
 -- CRACIÓN DEL USUARIO
