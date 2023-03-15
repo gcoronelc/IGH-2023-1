@@ -4,7 +4,7 @@
 
 ## Objetivo
 
-En este taller el participante aprenderá a programar servicios REST con Spring Boot y base de datos Oracle.
+En este taller el participante aprenderá a programar servicios `REST` con `Spring Boot` y base de datos `Oracle`.
 
 
 ## Docente
