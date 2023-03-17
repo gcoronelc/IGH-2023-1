@@ -9,12 +9,26 @@ import org.springframework.stereotype.Service;
 
 import com.igh.demo.dto.ProductoDto;
 
+import jakarta.annotation.PostConstruct;
+
 @Service
 public class ProductoService {
 
 	private static Map<Integer, ProductoDto> database;
 
+	/*
 	static {
+		database = new HashMap<Integer, ProductoDto>();
+		database.put(1, new ProductoDto(1, "Refrigeradora", 1890.0));
+		database.put(2, new ProductoDto(2, "Labadora", 1470.0));
+		database.put(3, new ProductoDto(3, "Televisor", 2289.0));
+		database.put(4, new ProductoDto(4, "Laptop", 5682.0));
+		database.put(5, new ProductoDto(5, "Mueble 3-2-1", 1734.0));
+	}
+	*/
+	
+	@PostConstruct
+	public void initBean() {
 		database = new HashMap<Integer, ProductoDto>();
 		database.put(1, new ProductoDto(1, "Refrigeradora", 1890.0));
 		database.put(2, new ProductoDto(2, "Labadora", 1470.0));
