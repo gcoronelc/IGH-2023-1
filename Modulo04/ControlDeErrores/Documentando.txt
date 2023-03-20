@@ -1,0 +1,9 @@
+AppProductoBase: Proyecto base con Spring REST.
+AppProductoBase01: Aplicando ResponseEntity.
+AppProductoBase02: Aplicando Excepciones.
+AppProductoBase03: Manejando la respuesta de error.
+AppProductoBase04: Haciendo un control global de errores con @RestControllerAdvice.
+AppProductoBase05: Mejorando el control de errores internos con ResponseEntityExceptionHandler.
+AppProductoBase06: Manejo de errores con ResponseStatusException (Desde Spring 5) y los mensaje con DefaultErrorAttributes.
+
+
