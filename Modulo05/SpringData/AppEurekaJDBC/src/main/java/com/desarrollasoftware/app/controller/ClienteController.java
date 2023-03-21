@@ -1,9 +1,22 @@
 package com.desarrollasoftware.app.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.desarrollasoftware.app.model.Cliente;
+import com.desarrollasoftware.app.service.ClienteService;
+
 @RestController
+@RequestMapping("/clientes")
 public class ClienteController {
+	
+	@Autowired
+	private ClienteService clienteService;
 
 	
 	/*
@@ -43,13 +56,14 @@ public class ClienteController {
 		}
 		return lista;
 	}
-
+*/
 	@PostMapping
-	public ResponseEntity<Producto> crear(@RequestBody Producto bean) {
-		bean = productoService.created(bean);
+	public ResponseEntity<Cliente> crear(@RequestBody Cliente bean) {
+		bean = clienteService.created(bean);
 		return ResponseEntity.status(HttpStatus.CREATED).body(bean);
 	}
 
+	/*
 	@PutMapping
 	public Producto modificar(@RequestBody Producto bean) {
 		Producto bean2 = productoService.getById(bean.getId());
