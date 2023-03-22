@@ -16,11 +16,9 @@ import com.desarrollasoftware.app.service.ClienteService;
 @RestController
 @RequestMapping("/clientes")
 public class ClienteController {
-	
+
 	@Autowired
 	private ClienteService clienteService;
-
-
 
 	@GetMapping
 	public ResponseEntity<?> get() {
@@ -32,57 +30,34 @@ public class ClienteController {
 	}
 
 	/*
-	@GetMapping("/id/{id}")
-	public Producto get(@PathVariable int id) {
-		Producto bean = productoService.getById(id);
-		if (bean == null) {
-			throw new ProductoNotFoundException(id);
-		}
-		return bean;
-
-	}
-
-	@GetMapping("/leer")
-	public Producto leer(@RequestParam(value = "id", defaultValue = "1") int id) {
-		Producto bean = productoService.getById(id);
-		if (bean == null) {
-			throw new ProductoNotFoundException(id);
-		}
-		return bean;
-	}
-
-	@GetMapping("/lista/{ids}")
-	public List<Producto> get(@PathVariable int[] ids) {
-		List<Producto> lista = productoService.getList(ids);
-		if (lista.isEmpty()) {
-			throw new ProductoNotFoundException(ids);
-		}
-		return lista;
-	}
-
-	@PostMapping
-	public ResponseEntity<Producto> crear(@RequestBody Producto bean) {
-		bean = productoService.crear(bean);
-		return ResponseEntity.status(HttpStatus.CREATED).body(bean);
-	}
-
-	@PutMapping
-	public Producto modificar(@RequestBody Producto bean) {
-		Producto bean2 = productoService.getById(bean.getId());
-		if (bean2 == null) {
-			throw new ProductoNotFoundException(bean.getId());
-		}
-		return productoService.created(bean);
-	}
-
-	@DeleteMapping("/id/{id}")
-	public ResponseEntity<?> eliminar(@PathVariable int id) {
-		Producto bean = productoService.getById(id);
-		if (bean == null) {
-			throw new ProductoNotFoundException(id);
-		}
-		productoService.deleteById(id);
-		return ResponseEntity.noContent().build();
-	}*/
+	 * @GetMapping("/id/{id}") public Producto get(@PathVariable int id) { Producto
+	 * bean = productoService.getById(id); if (bean == null) { throw new
+	 * ProductoNotFoundException(id); } return bean;
+	 * 
+	 * }
+	 * 
+	 * @GetMapping("/leer") public Producto leer(@RequestParam(value = "id",
+	 * defaultValue = "1") int id) { Producto bean = productoService.getById(id); if
+	 * (bean == null) { throw new ProductoNotFoundException(id); } return bean; }
+	 * 
+	 * @GetMapping("/lista/{ids}") public List<Producto> get(@PathVariable int[]
+	 * ids) { List<Producto> lista = productoService.getList(ids); if
+	 * (lista.isEmpty()) { throw new ProductoNotFoundException(ids); } return lista;
+	 * }
+	 * 
+	 * @PostMapping public ResponseEntity<Producto> crear(@RequestBody Producto
+	 * bean) { bean = productoService.crear(bean); return
+	 * ResponseEntity.status(HttpStatus.CREATED).body(bean); }
+	 * 
+	 * @PutMapping public Producto modificar(@RequestBody Producto bean) { Producto
+	 * bean2 = productoService.getById(bean.getId()); if (bean2 == null) { throw new
+	 * ProductoNotFoundException(bean.getId()); } return
+	 * productoService.created(bean); }
+	 * 
+	 * @DeleteMapping("/id/{id}") public ResponseEntity<?> eliminar(@PathVariable
+	 * int id) { Producto bean = productoService.getById(id); if (bean == null) {
+	 * throw new ProductoNotFoundException(id); } productoService.deleteById(id);
+	 * return ResponseEntity.noContent().build(); }
+	 */
 
 }

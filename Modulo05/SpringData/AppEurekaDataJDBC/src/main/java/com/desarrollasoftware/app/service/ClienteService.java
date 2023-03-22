@@ -11,8 +11,6 @@ public class ClienteService {
 	
 	@Autowired
 	private ClienteRepository clienteRepository;
-
-	
 	
 	public Iterable<Cliente> findAll(){
 		return clienteRepository.findAll();
