@@ -1,0 +1,25 @@
+Link de descarga:
+https://www.mongodb.com/try/download/community
+
+Carpeta de trabajo de MongoDB:
+C:\data\db
+
+Carpeta de MongoDB:
+C:\Archivos de programa\MongoDB\Server\6.1\bin\
+
+Programas:
+mongo.exe  => Cliente
+mongod.exe => Server
+
+
+Orden de ejecución:
+1ro. Server 
+2do. Cliente
+
+
+Para trabajar en consola agregar la ruta al PATH:
+C:\Archivos de programa\MongoDB\Server\6.1\bin\
+
+
+Descargar Mongo DBShell:
+https://www.mongodb.com/try/download/shell
