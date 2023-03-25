@@ -1,0 +1,57 @@
+Ejemplo 1: Seguridad por defecto
+------------------------------------------------------
+Authorization Type: Basic Auth
+Username: user
+Password: La que genera Spring
+
+
+Ejemplo 2: Definiendo el usuario en el archivo de propiedades
+-----------------------------------------------------------------------
+Authorization Type: Basic Auth
+Username: Gustavo Coronel
+Password: 1234567890
+
+
+Ejemplo 3: Definiendo un archivo de configuracion
+-----------------------------------------------------------------------
+Authorization Type: Basic Auth
+Username: Gustavo Coronel
+Password: 1234567890
+
+http://localhost:8080/      =>  Acceso sin autenticación.
+http://localhost:8080/user  => Acceso con autenticación.
+http://localhost:8080/admin => Acceso denegado para todos.
+
+
+
+Ejemplo 4: Definiendo usuarios en memoria con UserDetailsService
+-----------------------------------------------------------------------
+Authorization Type: Basic Auth
+Username: Gustavo Coronel
+Password: 1234567890
+
+http://localhost:8080/      =>  Acceso sin autenticación.
+http://localhost:8080/user  => Acceso con autenticación.
+http://localhost:8080/admin => Acceso denegado para todos.
+
+
+Ejemplo 5: Utiliza un formulario personalizado para el inicio de sesión
+-----------------------------------------------------------------------
+Authorization Type: Basic Auth
+Username: Gustavo Coronel
+Password: 1234567890
+
+http://localhost:8080/      =>  Acceso sin autenticación.
+http://localhost:8080/user  => Acceso con autenticación.
+http://localhost:8080/admin => Acceso denegado para todos.
+
+
+Ejemplo 6: Utiliza usuarios registrados en una base de datos para la autenticación
+------------------------------------------------------------------------------------
+Authorization Type: Basic Auth
+Username: Gustavo Coronel
+Password: 1234567890
+
+http://localhost:8080/      =>  Acceso sin autenticación.
+http://localhost:8080/user  => Acceso con autenticación.
+http://localhost:8080/admin => Acceso denegado para todos.
